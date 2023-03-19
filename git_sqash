@@ -1,0 +1,17 @@
+To remoev multiple commit and make a single commit out of all the commits we can use git squash.
+
+
+For example:
+    git reset --soft HEAD~3
+
+    Here reset, removes all the commits mentioned after HEAD
+    --soft flag only removes the commits but retains all the changes and moves then into staging.(If --heard is used, it will remove all the commits and it changes.)
+
+    HEAD~3 It means it will remove 3 commits from head
+
+    git commit -m "New commit msg"
+
+
+    git push --force
+
+    
